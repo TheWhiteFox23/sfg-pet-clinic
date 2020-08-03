@@ -4,7 +4,7 @@ public class Person {
     private String firstName;
     private String lastName;
 
-
+    //TODO extends entity
     public String getFirstName() {
         return firstName;
     }
