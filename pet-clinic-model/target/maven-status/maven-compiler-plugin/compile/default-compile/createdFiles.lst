@@ -1,0 +1,5 @@
+cz\whiterabbit\sfgpetclinic\model\Pet.class
+cz\whiterabbit\sfgpetclinic\model\PetType.class
+cz\whiterabbit\sfgpetclinic\model\Owner.class
+cz\whiterabbit\sfgpetclinic\model\Vet.class
+cz\whiterabbit\sfgpetclinic\model\Person.class
