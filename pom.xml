@@ -35,4 +35,6 @@
         </plugins>
     </build>
 
+    <!-- implement maven release engine, meanwhile execute releases manually via GIT-->
+
 </project>
