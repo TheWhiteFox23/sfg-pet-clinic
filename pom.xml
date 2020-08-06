@@ -36,9 +36,9 @@
     </build>
 
     <scm>
-        <url>
+        <developerConnection>
             scm:git:https://github.com/TheWhiteFox23/sfg-pet-clinic.git
-        </url>
+        </developerConnection>
     </scm>
 
     <distributionManagement>
