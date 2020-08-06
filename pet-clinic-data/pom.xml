@@ -12,9 +12,7 @@
     <properties>
         <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
     </properties>
-
-
-
+    
     <artifactId>pet-clinic-data</artifactId>
     <dependencies>
         <dependency>
