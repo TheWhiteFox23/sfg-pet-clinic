@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: cz.whiterabbit.sfgpetclinic.SfgPetClinicApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.244 s - in cz.whiterabbit.sfgpetclinic.SfgPetClinicApplicationTests
