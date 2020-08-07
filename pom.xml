@@ -39,8 +39,8 @@
         <developerConnection>
             scm:git:https://github.com/TheWhiteFox23/sfg-pet-clinic.git
         </developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <distributionManagement>
         <repository>
@@ -49,6 +49,5 @@
             <url>file://${user.home}/.m2/repository</url>
         </repository>
     </distributionManagement>
-
 
 </project>
