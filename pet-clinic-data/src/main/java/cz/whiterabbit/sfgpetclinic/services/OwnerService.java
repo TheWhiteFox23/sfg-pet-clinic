@@ -1,7 +1,6 @@
 package cz.whiterabbit.sfgpetclinic.services;
 
 import cz.whiterabbit.sfgpetclinic.model.Owner;
-import java.util.Set;
 
 public interface OwnerService extends CrudService<Owner, Long> {
     Owner findByLastName(String lastName);
