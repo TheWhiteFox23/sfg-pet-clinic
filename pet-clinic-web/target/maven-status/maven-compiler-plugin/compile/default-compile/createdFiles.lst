@@ -1,1 +1,5 @@
+cz\whiterabbit\sfgpetclinic\controllers\OwnerController.class
+cz\whiterabbit\sfgpetclinic\controllers\VetController.class
 cz\whiterabbit\sfgpetclinic\SfgPetClinicApplication.class
+cz\whiterabbit\sfgpetclinic\controllers\IndexController.class
+cz\whiterabbit\sfgpetclinic\bootstrap\DataLoader.class

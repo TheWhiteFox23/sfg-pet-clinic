@@ -1,5 +1,14 @@
+cz\whiterabbit\sfgpetclinic\services\CrudService.class
 cz\whiterabbit\sfgpetclinic\model\PetType.class
+cz\whiterabbit\sfgpetclinic\services\map\PetServiceMap.class
 cz\whiterabbit\sfgpetclinic\model\Pet.class
+cz\whiterabbit\sfgpetclinic\services\OwnerService.class
 cz\whiterabbit\sfgpetclinic\model\Vet.class
+cz\whiterabbit\sfgpetclinic\model\BaseEntity.class
+cz\whiterabbit\sfgpetclinic\services\map\VetServiceMap.class
 cz\whiterabbit\sfgpetclinic\model\Owner.class
+cz\whiterabbit\sfgpetclinic\services\map\AbstractMapService.class
+cz\whiterabbit\sfgpetclinic\services\VetService.class
+cz\whiterabbit\sfgpetclinic\services\map\OwnerServiceMap.class
 cz\whiterabbit\sfgpetclinic\model\Person.class
+cz\whiterabbit\sfgpetclinic\services\PetService.class
