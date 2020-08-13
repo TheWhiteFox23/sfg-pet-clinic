@@ -31,7 +31,7 @@ public class DataLoader implements CommandLineRunner {
         if (count == 0) {
             loadData();
         }
-       
+
     }
 
     private void loadData() {
