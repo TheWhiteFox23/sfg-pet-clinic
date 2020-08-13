@@ -2,5 +2,5 @@ package cz.whiterabbit.sfgpetclinic.services;
 
 import cz.whiterabbit.sfgpetclinic.model.VetSpeciality;
 
-public interface SpecialitiesService extends CrudService<VetSpeciality, Long> {
+public interface SpecialitieService extends CrudService<VetSpeciality, Long> {
 }
