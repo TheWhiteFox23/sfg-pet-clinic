@@ -1,14 +1,13 @@
 package cz.whiterabbit.sfgpetclinic.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "types")
 public class PetType extends BaseEntity{
-    
+
     @Column(name = "name")
+    @JoinTable(name = "vet_specialities", joinColumns = @JoinColumn(name = "vet_id"), inverseJoinColumns = @JoinColumn(name = "speciality_id"))
     private String name;
 
     public String getName() {
