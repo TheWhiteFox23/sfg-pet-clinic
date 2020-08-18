@@ -3,12 +3,14 @@ package cz.whiterabbit.sfgpetclinic.services.datajpa;
 import cz.whiterabbit.sfgpetclinic.model.Vet;
 import cz.whiterabbit.sfgpetclinic.repositories.VetRepository;
 import cz.whiterabbit.sfgpetclinic.services.VetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Component
+@Profile("springdatajpa")
 public class VetServiceJPA  implements VetService {
     private final VetRepository vetRepository;
 

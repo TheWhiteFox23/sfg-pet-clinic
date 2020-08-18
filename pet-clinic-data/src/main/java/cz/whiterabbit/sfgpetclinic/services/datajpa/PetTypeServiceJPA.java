@@ -3,12 +3,14 @@ package cz.whiterabbit.sfgpetclinic.services.datajpa;
 import cz.whiterabbit.sfgpetclinic.model.PetType;
 import cz.whiterabbit.sfgpetclinic.repositories.PetTypeRepository;
 import cz.whiterabbit.sfgpetclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Component
+@Profile("springdatajpa")
 public class PetTypeServiceJPA implements PetTypeService {
     private final PetTypeRepository petTypeRepository;
 
