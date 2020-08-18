@@ -1,10 +1,7 @@
 package cz.whiterabbit.sfgpetclinic.bootstrap;
 
 import cz.whiterabbit.sfgpetclinic.model.*;
-import cz.whiterabbit.sfgpetclinic.services.OwnerService;
-import cz.whiterabbit.sfgpetclinic.services.PetTypeService;
-import cz.whiterabbit.sfgpetclinic.services.SpecialitieService;
-import cz.whiterabbit.sfgpetclinic.services.VetService;
+import cz.whiterabbit.sfgpetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -17,12 +14,14 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialitieService specialitieService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialitieService specialitieService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialitieService specialitieService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialitieService = specialitieService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -82,8 +81,12 @@ public class DataLoader implements CommandLineRunner {
         billiCat.setOwner(owner_2);
         billiCat.setName("Niko");
         billiCat.setPetType(savedCatPetType);
-
+        owner_2.getPets().add(billiCat);
+        //System.out.println("Saving Owner");
         ownerService.save(owner_2);
+        //System.out.println("Pet id after save : ");
+        //System.out.println("owner_2 pets size : " + owner_2.getPets().size());
+        //owner_2.getPets().forEach(pet -> {System.out.println(pet.getId());});
 
         Vet vet = new Vet();
         vet.setFirstName("Jane");
@@ -98,5 +101,12 @@ public class DataLoader implements CommandLineRunner {
         vet_2.getSpecialities().add(surgerySaved);
 
         vetService.save(vet_2);
+
+        Visit visit = new Visit();
+        visit.setPet(billiCat);
+        visit.setDate(LocalDate.now());
+        visit.setDescription("sneezy kitty");
+
+        visitService.save(visit);
     }
 }

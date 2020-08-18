@@ -5,11 +5,13 @@ import cz.whiterabbit.sfgpetclinic.model.Pet;
 import cz.whiterabbit.sfgpetclinic.services.OwnerService;
 import cz.whiterabbit.sfgpetclinic.services.PetService;
 import cz.whiterabbit.sfgpetclinic.services.PetTypeService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"mapservice", "default"})
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     private final PetTypeService petTypeService;
     private final PetService petService;
@@ -54,6 +56,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
                     if(pet.getId() == null){
                         Pet savedPet = petService.save(pet);
                         pet.setId(savedPet.getId());
+                        System.out.println("pet id : " + pet.getId());
                     }
                 });
             }
