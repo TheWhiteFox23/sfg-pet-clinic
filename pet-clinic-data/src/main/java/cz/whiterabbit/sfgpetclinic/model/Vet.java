@@ -12,13 +12,13 @@ import java.util.Set;
 public class Vet extends Person{
 
     @ManyToMany(fetch = FetchType.EAGER)
-    private Set<VetSpeciality> specialities = new HashSet<>();
+    private Set<Speciality> specialities = new HashSet<>();
 
-    public Set<VetSpeciality> getSpecialities() {
+    public Set<Speciality> getSpecialities() {
         return specialities;
     }
 
-    public void setSpecialities(Set<VetSpeciality> specialities) {
+    public void setSpecialities(Set<Speciality> specialities) {
         this.specialities = specialities;
     }
 }
